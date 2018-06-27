@@ -22,6 +22,9 @@
       <td>
         <%= link_to 'more', article_path(article) %>
       </td>
+      <td>
+        <%= link_to 'delete', article_path(article), method: :delete, data: {confirm: "Are you sure?"} %>
+      </td>
     </tr>
   <% end %>
 </table>
